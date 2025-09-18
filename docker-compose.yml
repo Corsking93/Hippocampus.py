@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  hippocampus:
+    image: python:3.11-slim
+    volumes:
+      - ./hippocampus_secure_demo:/app
+    working_dir: /app
+    command: ["python", "hippocampus.py"]
+    ports:
+      - "9000:9000"
+  implant:
+    image: python:3.11-slim
+    depends_on:
+      - hippocampus
+    volumes:
+      - ./hippocampus_secure_demo:/app
+    working_dir: /app
+    command: ["python", "implant_sim.py"]
