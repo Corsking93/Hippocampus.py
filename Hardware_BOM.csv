@@ -1,0 +1,11 @@
+Item,Example Part / Family,Purpose,Notes / Vendor Examples
+Microcontroller / SoC,ARM Cortex-M33 (STM32L5/S5),Main MCU with TrustZone-M,STMicroelectronics example
+Secure Element,Microchip ATECC608A / NXP SE050,"Hardware Root of Trust, key storage","Vendor: Microchip, NXP, Infineon"
+TPM / Secure Enclave,Discrete TPM 2.0 / Platform secure enclave,Protect signing keys on external controller,Server platform TPM or HSM
+Radio / Wireless,BLE5 module / 2.4GHz module,Short-range telemetry and pairing,Evaluate certified modules
+Battery / Power,Rechargeable Li-ion + inductive coil,Power & charging subsystem,Include power management IC and safety
+Electrode Array,Flexible polyimide / Parylene-C coated arrays,Biocompatible electrodes,Medical-grade supplier required
+Tamper Sensor,Tamper switch / temperature sensor,Detect physical tamper or thermal events,Used for tamper-evidence
+Debug Interface,"Only for manufacturing, disabled in production",Factory programming/test,Require cryptographic enable to activate
+Secure Bootloader,ROM + secure boot chain,Verify firmware authenticity on boot,Use secure element for verification
+Encapsulation / Packaging,Titanium or medical polymer,Biocompatible enclosure,Sterilization compatibility required
